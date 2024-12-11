@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiniela Violet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('UOPE7-bdsurlv4D_7')</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpapers.com/images/hd/eric-cartman-south-park-poster-9gafs7euyp7w5o93.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .field {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer{
+            color: white;
+            text-align: center;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+            position: static;
+        }
+
+        #twitter, #facebook{
+            font-size: 2em;
+            background-color: #18191f;
+            color: #fff;
+            box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+            border-radius: 29px;
+            padding: 11px 19px;
+            margin: 0 40px;
+            animation: animate 3s linear infinite;
+            text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+        }
+
+        #facebook{
+            animation-delay: 0.7s;
+        }
+
+        @keyframes animate{
+            from {
+
+                filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        #logo {
+            flex: 1;
+            text-align: center;
+            position: static;
+        }
+
+        #logo img {
+            width: auto;
+            height: 160px;
+        }
+
+        input[type="submit"] {
+            padding: 6px 30px;
+            font-size: 14px;
+            background-color: #4460AA;
+            color: #fff;
+            border: none
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header id="logo">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhZdmQDqusV9Lc9jgvYRGrUwdWrMr2QgYJB4eNXoTHKQgydfPM4Dc-QkJNQF7lhOY9OsJClbM5Wrg6StF7rE73eXfbZyqgQ0un1bySYAUBxQbxSO_vgcSJ3W-yiGfUpoYWre6IloDdvC6mqTR_14VktKqKvXB0jMCuLxkpvFGhEazlV_RY4aaXIuImg4L_E" alt="Violet">
+    </header>
+    <form id="form">
+        <label for="nombre">Tu Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <fieldset>
+            <legend>Elige al ganador:</legend>
+            <h4>Primera División</h4>
+            <input type="radio" id="jugador1" name="ganador1" value="Equipo1" required>
+            <label for="jugador1">Equipo1</label><br>
+    
+            <input type="radio" id="jugador2" name="ganador1" value="Equipo2" required>
+            <label for="jugador2">Equipo2</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador3" name="ganador2" value="Equipo3" required>
+            <label for="jugador3">Equipo3</label><br>
+
+            <input type="radio" id="jugador4" name="ganador2" value="Equipo4" required>
+            <label for="jugador4">Equipo4</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador5" name="ganador3" value="Equipo5" required>
+            <label for="jugador5">Equipo5</label><br>
+
+            <input type="radio" id="jugador6" name="ganador3" value="Equipo6" required>
+            <label for="jugador6">Equipo6</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador7" name="ganador4" value="Equipo7" required>
+            <label for="jugador7">Equipo7</label><br>
+
+            <input type="radio" id="jugador8" name="ganador4" value="Equipo8" required>
+            <label for="jugador8">Equipo8</label>
+            <br>
+            <br>
+            <input type="submit" id="button" value="Send Email" >
+        </div>
+      
+    </form>
+</div>
+
+<script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+
+    .addEventListener('submit', function(event) {
+
+        event.preventDefault();
+
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_v5c57ev';
+
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Send Email';
+            alert('Sent!');
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });    
+    });
+</script>
+
+</body>
+</html>
