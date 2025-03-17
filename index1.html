@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiniela Draft RR Extinción</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('UOPE7-bdsurlv4D_7')</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d843okx-eb13e8e4-0fa4-4fa9-968a-e0f36ff168de.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJmYjI4MjFhLTE0MDYtNGExZC05YjA0LTY2NjhmMjc4ZTk0NFwvZDg0M29reC1lYjEzZThlNC0wZmE0LTRmYTktOTY4YS1lMGYzNmZmMTY4ZGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TIK_E5L8dTyBUk_dADA5WkLP8jSJMR7YGJG54KNAido');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .field {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer{
+            color: white;
+            text-align: center;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+            position: static;
+        }
+
+        #twitter, #facebook{
+            font-size: 2em;
+            background-color: #18191f;
+            color: #fff;
+            box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+            border-radius: 29px;
+            padding: 11px 19px;
+            margin: 0 40px;
+            animation: animate 3s linear infinite;
+            text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+        }
+
+        #facebook{
+            animation-delay: 0.7s;
+        }
+
+        @keyframes animate{
+            from {
+
+                filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        #logo {
+            flex: 1;
+            text-align: center;
+            position: static;
+        }
+
+        #logo img {
+            width: auto;
+            height: 160px;
+        }
+
+        input[type="submit"] {
+            padding: 6px 30px;
+            font-size: 14px;
+            background-color: #4460AA;
+            color: #fff;
+            border: none
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header id="logo">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiZORXTCbXlzfQg_l2lq_9LzXrpr66f409OE5ClPfe1hecO36OKNl9GKaF0GeZqQPVJxrgrkacCjHecBefMeSn_wG6DdB9zERvhkHP5NE3KvAn04NzoesnE9pFXL3n3H1XgYTDLBCGxEQRMXXR22K6H2uoxINQWQxaYXogTpz-JZEHdbNV9MGRtHEd8QYGj" alt="Extinción">
+    </header>
+    <form id="form">
+        <label for="nombre">Tu Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <fieldset>
+            <legend>Elige al ganador:</legend>
+            <h4>Grupo B</h4>
+            <input type="radio" id="jugador13" name="ganador7" value="jugador13" required>
+            <label for="jugador7">jugador13</label><br>
+
+            <input type="radio" id="jugador14" name="ganador7" value="jugador14" required>
+            <label for="jugador8">jugador14</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador15" name="ganador8" value="jugador15" required>
+            <label for="jugador7">jugador15</label><br>
+
+            <input type="radio" id="jugador16" name="ganador8" value="jugador16" required>
+            <label for="jugador8">jugador16</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador17" name="ganador9" value="jugador17" required>
+            <label for="jugador7">jugador17</label><br>
+
+            <input type="radio" id="jugador18" name="ganador9" value="jugador18" required>
+            <label for="jugador8">jugador18</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador19" name="ganador10" value="jugador19" required>
+            <label for="jugador7">jugador19</label><br>
+
+            <input type="radio" id="jugador20" name="ganador10" value="jugador20" required>
+            <label for="jugador8">jugador20</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador21" name="ganador11" value="jugador21" required>
+            <label for="jugador7">jugador21</label><br>
+
+            <input type="radio" id="jugador22" name="ganador11" value="jugador22" required>
+            <label for="jugador8">jugador22</label>
+            <br>
+            <br>
+            <input type="radio" id="jugador23" name="ganador12" value="jugador23" required>
+            <label for="jugador7">jugador23</label><br>
+
+            <input type="radio" id="jugador24" name="ganador12" value="jugador24" required>
+            <label for="jugador8">jugador24</label>
+            <br>
+            <br>
+            <input type="submit" id="button" value="Send Email" >
+        </div>
+      
+    </form>
+</div>
+
+<script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+
+    .addEventListener('submit', function(event) {
+
+        event.preventDefault();
+
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_v5c57ev';
+
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Send Email';
+            alert('Sent!');
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });    
+    });
+</script>
+
+</body>
+</html>
